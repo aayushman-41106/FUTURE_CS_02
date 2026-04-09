@@ -1,0 +1,247 @@
+Delivered-To: aayushparab16@gmail.com
+Received: by 2002:a05:693c:3283:b0:10a:6e88:cc92 with SMTP id sg3csp547023dyc;
+        Tue, 19 Mar 2024 22:46:08 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEhQtS1qrDHgee7HpNR099a7K/lGwNvPfhA89Lq/OFvtlbYDViPt5dESmixFfSd14jRzxFP
+X-Received: by 2002:a05:620a:24cb:b0:789:ee8e:bd9f with SMTP id m11-20020a05620a24cb00b00789ee8ebd9fmr14392917qkn.50.1710913568573;
+        Tue, 19 Mar 2024 22:46:08 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1710913568; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Oa1f2z8oIeMIp/q0tOU347TYuaCvbEBJThGMWevQbKiqLK+8m7EetHdbcWSPrw0kxa
+         auQ6s8t+gWvae/ZIgjTgmDcTXDJ55Qrt1hHikS1NblV4Ru5MY78tULFjI7ruq7KwGpZW
+         njQ+hd1nDdbdp9aqGDRCgbs/Ac+PTE1KlVhmlNdvEbY9H0uBu48MqT59AvodaZOw6gdK
+         +Mupxxx+SqbGczZDm2Y77+bmgyp7K9wZIuZSWo+as/YCGWagsGL1onPELyIGWH+H+l+f
+         wMmSx0NKzHqqi7P0SmmRqEbE6i0OpHGYDyB9eUz/qcRs8mkO9yYmENzBmM6XauSvz3dJ
+         Ja6w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:feedback-id:list-unsubscribe-post:list-unsubscribe
+         :reply-to:to:from:subject:message-id:date:dkim-signature;
+        bh=Zlkc60Yd2bj0DjhOjubr0oe51OJG/rwgdPCdjAy1PPI=;
+        fh=OCk/CafUG20nk11eQNjjWejM+l/YBX8e0C1YIaAP/Hc=;
+        b=UD5J3W9QM/asI3DjcAuAbTPWD/4f9/XAAtfOkdChGeT153ptvYlKTGxZ2B3wKrPydV
+         mGr4x4W9H/EYP+FG8Q5fQdP6FD8ENNnTnpRDzCXHQ+E9xOuJJlh2wU7cYF2LtQVBOa0a
+         8TphIIsfK08aSv4mozRKBznP3DQSH4OwhadIuo5CHQCLTssAC98gH/m9K6YQFYcMlHcN
+         eqRd3RgN+ZqQ+dtRj5qEJB5InXkviMh0AZuWoYAib8LkJ9Xej0M6cVAmg4RUinuEYS9P
+         wtB3TBMJ2/otgPcfg5Uez4c+D3QT7vWo6+WzKWhXB5HNdRhmss6wpWQIeiMgIgjukxbX
+         8LcQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@tripshrip.com header.s=k1 header.b=PpW1pifQ;
+       spf=pass (google.com: domain of bounce.cli3958-959182-959182-1881825088-2152-11986-37874-66-p1649@mc.tripshrip.com designates 103.197.16.251 as permitted sender) smtp.mailfrom=bounce.cli3958-959182-959182-1881825088-2152-11986-37874-66-p1649@mc.tripshrip.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=tripshrip.com
+Return-Path: <bounce.cli3958-959182-959182-1881825088-2152-11986-37874-66-p1649@mc.tripshrip.com>
+Received: from mail3.tripshrip.com (mail3.tripshrip.com. [103.197.16.251])
+        by mx.google.com with ESMTPS id t3-20020a05620a0b0300b00789de2c2a52si11714474qkg.594.2024.03.19.22.46.08
+        for <aayushparab16@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-CHACHA20-POLY1305 bits=256/256);
+        Tue, 19 Mar 2024 22:46:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce.cli3958-959182-959182-1881825088-2152-11986-37874-66-p1649@mc.tripshrip.com designates 103.197.16.251 as permitted sender) client-ip=103.197.16.251;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@tripshrip.com header.s=k1 header.b=PpW1pifQ;
+       spf=pass (google.com: domain of bounce.cli3958-959182-959182-1881825088-2152-11986-37874-66-p1649@mc.tripshrip.com designates 103.197.16.251 as permitted sender) smtp.mailfrom=bounce.cli3958-959182-959182-1881825088-2152-11986-37874-66-p1649@mc.tripshrip.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=tripshrip.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ s=k1; d=tripshrip.com; t=1710913567; h=subject:from:to;
+ bh=Zlkc60Yd2bj0DjhOjubr0oe51OJG/rwgdPCdjAy1PPI=;
+ b=PpW1pifQQlYJnt+GGlNLkKzh+PYKPPK6NziGm6fZBpMCmU9mroCc0eHztg0EN/tXj+M3f9
+ KNGugZH1HguVmtxInqLXcKgK7P1SgQzWEZTilOmy6UGlO3Sh2pSEI6by5ykLk/Z2NuC/u4
+ lphsiAPvEn83AK6PyZI2hl4PoIWFkgyIbXTszRYgBRZFyGmGjBTzlsYIDSSE3OHVr6xHw7
+ +ljxBfiUvaCBCFRb+Trhg3+coZ2weOqCfpXN1in+boTkAD1XrTEElfsAY2NunmehdQ7G1d
+ GS0lO8eB4Bph8ChgUXmP2nwjHYVLibtFMQjSOtc6r4sZMHNZgTBajYHn5jskPw==
+Date: Wed, 20 Mar 2024 05:46:07 +0000
+Message-ID: <1710913567-MTg4MTgyNTA4OC05NTkxODI@mc.tripshrip.com>
+Subject: =?UTF-8?q?IMP:_Activate_your_new_=F0=9D=90=8B=F0=9D=90=A2=F0=9D=90=9F?= =?UTF-8?q?=F0=9D=90=9E=F0=9D=90=93=F0=9D=90=A2=F0=9D=90=A6=F0=9D=90=9E_?=
+ =?UTF-8?q?=F0=9D=90=85=F0=9D=90=AB=F0=9D=90=9E=F0=9D=90=9E_=F0=9D=90=80?=
+ =?UTF-8?q?=F0=9D=90=B1=F0=9D=90=A2=F0=9D=90=AC_bank=5Fcredit_card_no_1043?=
+ =?UTF-8?q?-XXXX-4532-XXXX_with_upto_=E2=82=B92,35,900*_limit....{aayushpa?=
+ =?UTF-8?q?rab16@gmail.com}?=
+From: "Axis_Bank_Notification" <notifications@tripshrip.com>
+To: aayushparab16@gmail.com
+Reply-To: notifications@tripshrip.com
+List-Unsubscribe: <https://mc.tripshrip.com/us/uzfYqsJchqjFjbYCMbyyKYsfAiiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ>,
+ <mailto:unsub.cli3958-959182-959182-1881825088-2152-11986-37874-66-p1649@mc.tripshrip.com?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-campaignid: 959182
+X-SentFromServer: 103.197.16.251
+X-Subscriber-ID: 1881825088
+Feedback-ID: 5470:1881825088:3958:tripshripc
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary=e46ce2242ede7965a94fb598c24f0755fd9ba2aa31d5111cc626561213d6
+
+--e46ce2242ede7965a94fb598c24f0755fd9ba2aa31d5111cc626561213d6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+![Axis CREDIT CARD](http://images.airpost.in/Axis-Complpk1.png) Not just a =
+**CREDIT CARD**,
+
+It&#39;s a **Discount CARD!** Your Eligibility **confirmed for** **Axis Ban=
+k NEO CREDIT CARD** **Credit Limit** **upto =E2=82=B9 2,35,900\*** Discount=
+ **Rs. 2880**
+
+Off **Zomato** Discount **Rs.1200**
+
+**Book My show****Features:****=E2=9C=93 Credit Limit upto =E2=82=B9 2,35,9=
+00**
+
+**=E2=9C=93 Life Time Free**
+
+**=E2=9C=93 Exciting discount offers**
+
+**Apply Now =C2=BB**
+
+ \*T&amp;C Apply.
+--e46ce2242ede7965a94fb598c24f0755fd9ba2aa31d5111cc626561213d6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IMP: Activate your new =F0=9D=90=8B=F0=9D=90=A2=F0=9D=90=9F=F0=
+=9D=90=9E=F0=9D=90=93=F0=9D=90=A2=F0=9D=90=A6=F0=9D=90=9E =F0=9D=90=85=F0=
+=9D=90=AB=F0=9D=90=9E=F0=9D=90=9E =F0=9D=90=80=F0=9D=90=B1=F0=9D=90=A2=F0=
+=9D=90=AC bank_credit card no 1043-XXXX-4532-XXXX with upto =E2=82=B92,35,9=
+00* limit....{aayushparab16@gmail.com}</title>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+" />
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0"/>
+    <style type=3D"text/css">
+      #outlook a {
+          padding: 0;
+      }
+      body {
+          width: 100% !important;
+          -webkit-text-size-adjust: none;
+          margin: 0;
+          padding: 0;
+      }
+      img {
+          border: none;
+          font-size: 14px;
+          height: auto;
+          line-height: 100%;
+          outline: none;
+          text-decoration: none;
+      }
+      .preheader {
+          display: none !important;
+      }
+     =20
+    </style>
+  </head>
+  <body>
+   =20
+   =20
+    <table style=3D"width: 480px; font-family: arial; border-color: #800020=
+; border: 1px solid #232323;" cellspacing=3D"0" cellpadding=3D"0" align=3D"=
+center" bgcolor=3D"#fff"><tbody><tr><td><a style=3D"text-decoration: none; =
+color: #000000;"  href=3D"https://mc.tripshrip.com/links/uzfYqsJchqjFjbYCMb=
+yyKYsfAiiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ/1530616" target=3D"_blank" rel=3D"=
+noopener noreferrer nofollow"><img class=3D"CToWUd" src=3D"http://images.ai=
+rpost.in/Axis-Complpk1.png" alt=3D"Axis CREDIT CARD" width=3D"100%"/> </a><=
+/td></tr><tr><td style=3D"font-size: 22px; text-align: center; padding-top:=
+ 13px;"><a style=3D"text-decoration: none; color: #000000;"  href=3D"https:=
+//mc.tripshrip.com/links/uzfYqsJchqjFjbYCMbyyKYsfAiiMZfjKIcPckfCMDhIxVMkKah=
+bRbMKGeZ/1530616" target=3D"_blank" rel=3D"noopener noreferrer nofollow">No=
+t just a <strong>CREDIT CARD</strong>,<br/>It&#39;s a<strong> Discount CARD=
+!</strong> </a></td></tr><tr><td style=3D"padding: 10px; font-size: 17px; p=
+adding-top: 15px;" align=3D"center"><a style=3D"text-decoration: none; colo=
+r: #000000;"  href=3D"https://mc.tripshrip.com/links/uzfYqsJchqjFjbYCMbyyKY=
+sfAiiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ/1530616" target=3D"_blank" rel=3D"noop=
+ener noreferrer nofollow">Your Eligibility <strong>confirmed for</strong> <=
+strong style=3D"color: #800020;">Axis Bank NEO CREDIT CARD</strong> <strong=
+>Credit Limit</strong> <strong style=3D"font-size: 24px; color: #800020;">u=
+pto =E2=82=B9 2,35,900*</strong> </a></td></tr><tr><td><a style=3D"text-dec=
+oration: none; color: #000000;"  href=3D"https://mc.tripshrip.com/links/uzf=
+YqsJchqjFjbYCMbyyKYsfAiiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ/1530616" target=3D"=
+_blank" rel=3D"noopener noreferrer nofollow">=C2=A0</a></td></tr><tr><td al=
+ign=3D"center"><table style=3D"padding-left: 5px; padding-right: 5px;" widt=
+h=3D"95%" align=3D"center"><tbody><tr><td style=3D"border: 1px solid #ddd; =
+padding: 8px; border-radius: 15px; border-color: green;" align=3D"center" w=
+idth=3D"50%"><a style=3D"text-decoration: none; color: #000000;"  href=3D"h=
+ttps://mc.tripshrip.com/links/uzfYqsJchqjFjbYCMbyyKYsfAiiMZfjKIcPckfCMDhIxV=
+MkKahbRbMKGeZ/1530616" target=3D"_blank" rel=3D"noopener noreferrer nofollo=
+w">Discount<strong style=3D"color: #800020; font-size: 22px;">Rs. 2880</str=
+ong><br/>Off <strong>Zomato</strong></a></td><td><a style=3D"text-decoratio=
+n: none; color: #000000;"  href=3D"https://mc.tripshrip.com/links/uzfYqsJch=
+qjFjbYCMbyyKYsfAiiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ/1530616" target=3D"_blank=
+" rel=3D"noopener noreferrer nofollow">=C2=A0</a></td><td style=3D"border: =
+1px solid #ddd; padding: 8px; border-radius: 15px; border-color: green;" al=
+ign=3D"center" width=3D"55%"><a style=3D"text-decoration: none; color: #000=
+000;"  href=3D"https://mc.tripshrip.com/links/uzfYqsJchqjFjbYCMbyyKYsfAiiMZ=
+fjKIcPckfCMDhIxVMkKahbRbMKGeZ/1530616" target=3D"_blank" rel=3D"noopener no=
+referrer nofollow">Discount <strong style=3D"color: #800020; font-size: 22p=
+x;">Rs.1200 </strong><br/><strong>Book My show </strong></a></td><td><a sty=
+le=3D"text-decoration: none; color: #000000;"  href=3D"https://mc.tripshrip=
+.com/links/uzfYqsJchqjFjbYCMbyyKYsfAiiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ/15306=
+16" target=3D"_blank" rel=3D"noopener noreferrer nofollow">=C2=A0</a></td><=
+/tr></tbody></table></td></tr><tr><td><a style=3D"text-decoration: none; co=
+lor: #000000;"  href=3D"https://mc.tripshrip.com/links/uzfYqsJchqjFjbYCMbyy=
+KYsfAiiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ/1530616" target=3D"_blank" rel=3D"no=
+opener noreferrer nofollow">=C2=A0</a></td></tr><tr><td align=3D"center"><t=
+able width=3D"90%" align=3D"center"><tbody><tr><td style=3D"border: 0px sol=
+id #ddd; padding: 8px; border-radius: 15px; border-color: #f0b27a;" align=
+=3D"left" width=3D"20%"><a style=3D"text-decoration: none; color: #000000;"=
+  href=3D"https://mc.tripshrip.com/links/uzfYqsJchqjFjbYCMbyyKYsfAiiMZfjKIc=
+PckfCMDhIxVMkKahbRbMKGeZ/1530616" target=3D"_blank" rel=3D"noopener norefer=
+rer nofollow"><strong><u>Features:</u></strong> </a></td><td>=C2=A0</td><td=
+ style=3D"border: 0px solid #ddd; padding: 8px; border-radius: 15px; border=
+-color: #f0b27a; padding-left: 40px;" align=3D"left" width=3D"70%"><a style=
+=3D"text-decoration: none; color: #000000;"  href=3D"https://mc.tripshrip.c=
+om/links/uzfYqsJchqjFjbYCMbyyKYsfAiiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ/1530616=
+" target=3D"_blank" rel=3D"noopener noreferrer nofollow"><strong style=3D"c=
+olor: green;"><strong style=3D"font-size: 20px; color: #e67e22;">=E2=9C=93<=
+/strong> <strong> Credit Limit</strong> upto =E2=82=B9 2,35,900<br/><strong=
+ style=3D"font-size: 20px; color: #e67e22;">=E2=9C=93</strong> <strong> Lif=
+e Time</strong> Free<br/><strong style=3D"font-size: 20px; color: #e67e22;"=
+>=E2=9C=93</strong> Exciting discount offers</strong></a></td><td><a style=
+=3D"text-decoration: none; color: #000000;"  href=3D"https://mc.tripshrip.c=
+om/links/uzfYqsJchqjFjbYCMbyyKYsfAiiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ/1530616=
+" target=3D"_blank" rel=3D"noopener noreferrer nofollow">=C2=A0</a></td></t=
+r></tbody></table></td></tr><tr><td><a style=3D"text-decoration: none; colo=
+r: #000000;"  href=3D"https://mc.tripshrip.com/links/uzfYqsJchqjFjbYCMbyyKY=
+sfAiiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ/1530616" target=3D"_blank" rel=3D"noop=
+ener noreferrer nofollow">=C2=A0</a></td></tr><tr><td style=3D"padding-left=
+: 20px;" align=3D"center"><br/><a style=3D"text-decoration: none; color: #0=
+00000;"  href=3D"https://mc.tripshrip.com/links/uzfYqsJchqjFjbYCMbyyKYsfAii=
+MZfjKIcPckfCMDhIxVMkKahbRbMKGeZ/1530616" target=3D"_blank" rel=3D"noopener =
+noreferrer nofollow"><strong style=3D"padding: 14px 35px; background-color:=
+ #800020; color: #fff; font-weight: 500; border-radius: 50px; font-size: 20=
+px;">Apply Now =C2=BB </strong> </a><br/>=C2=A0</td></tr><tr><td style=3D"f=
+ont-size: 8px; padding-right: 10px; padding-top: 2px; text-align: left; pad=
+ding-bottom: 5px;"><a style=3D"text-decoration: none; color: #000000;"  hre=
+f=3D"https://mc.tripshrip.com/links/uzfYqsJchqjFjbYCMbyyKYsfAiiMZfjKIcPckfC=
+MDhIxVMkKahbRbMKGeZ/1530616" target=3D"_blank" rel=3D"noopener noreferrer n=
+ofollow">*T&amp;C Apply.</a></td></tr></tbody></table><div>=C2=A0</div><div=
+>=C2=A0</div>
+    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" =
+style=3D"font-family:arial,sans-serif; font-size:12px; color:#888888; margi=
+n: 20px 0; width: 100%; text-align:center;">
+     =20
+      <tr><td style=3D"line-height: 25px;"><p style=3D"font-size:12px; marg=
+in: 0;">If you wish to opt out of all type of emails, click <a style=3D"col=
+or: #0096c7;" href=3D"https://mc.tripshrip.com/us/uzfYqsJchqjFjbYCMbyyKYsfA=
+iiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ">Unsubscribe</a>.</p></td></tr>
+      <tr><td style=3D"line-height: 25px;"><p style=3D"font-size:12px; marg=
+in: 0;">You can update your preferences on the type of emails you want to r=
+eceive from us <a style=3D"color: #0096c7;" href=3D'https://mc.tripshrip.co=
+m/mp/uzfYqsJchqjFjbYCMbyyKYsfAiiMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ'>Mailing Pr=
+eferences.</a></p></td></tr>
+      <tr><td><p style=3D"font-size:12px; margin-top:8px;"><a style=3D"colo=
+r: #0096c7;" href=3D"https://mc.tripshrip.com/rs/uzfYqsJchqjFjbYCMbyyKYsfAi=
+iMZfjKIcPckfCMDhIxVMkKahbRbMKGeZ">Report Abuse</a></p></td></tr>
+     =20
+    </table>
+    <span style=3D"display:none !important;" class=3D"preheader"><img src=
+=3D"https://mc.tripshrip.com/opens/uzfYqsJchqjFjbYCMbyyKYsfAiiMZfjKIcPckfCM=
+DhIxVMkKahbRbMKGeZ/blank.gif" alt=3D"open track" width=3D"0" height=3D"0" s=
+tyle=3D"display:none !important;" /></span><a href=3D"https://mc.tripshrip.=
+com/a/uZFYlzFZKiSRBiYBySfAii" style=3D"display:none !important;">uZFYlzFZKi=
+SRBiYBySfAii</a>
+  </body>
+</html>
+
+--e46ce2242ede7965a94fb598c24f0755fd9ba2aa31d5111cc626561213d6--
